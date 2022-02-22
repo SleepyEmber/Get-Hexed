@@ -1,0 +1,34 @@
+
+["World Generation"]
+	#Village Rituals Weight
+	#The higher the weight, the more frequent they will spawn
+	#Set to 0 to disable.
+	#Range: 0 ~ 32
+	villageRitualsWeight = 2
+	#Village Candle House Weight
+	#The higher the weight, the more frequent they will spawn
+	#Set to 0 to disable.
+	#Range: 0 ~ 32
+	villageCandleHouseWeight = 6
+	#Vampire Manor Gen
+	#Disable this to prevent vampire manors from generating
+	vampireManorGen = true
+	#Vampire Manor Average Spread
+	#The amount of chunks on average to space the manor
+	#Range: 1 ~ 100
+	vampireManorAverageSpread = 20
+	#Vampire Manor Minimum Spread
+	#The minimum amount of chunks on to space the manor
+	#Note: this value must be smaller than the average!
+	#Range: 1 ~ 100
+	vampireManorMinSpread = 15
+	#Candle Maker Hut Average Spread
+	#The amount of chunks on average to space the candle maker huts
+	#Range: 1 ~ 100
+	candleHutAverageSpread = 20
+	#Candle Maker Hut Minimum Spread
+	#The minimum amount of chunks to space the candle maker huts
+	#Note: this value must be smaller than the average!
+	#Range: 1 ~ 100
+	candleHutMinSpread = 10
+
