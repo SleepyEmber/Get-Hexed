@@ -1,0 +1,22 @@
+
+#Config Settings
+[config]
+	#Phantom Quilt acts like a parachute. [Default: true]
+	parachuteQuilt = true
+	#Number of blocks to fall before the Phantom Quilt opens. [Default: 8]
+	#Range: 1 ~ 383
+	quiltActivateHeight = 8
+	#Raging Obsidian in the Nether occasionally burns nearby entities. [Default: true]
+	ragingBurning = true
+	#Range in blocks of Raging Obsidian's entity burning effect. [Default: 5]
+	#Range: 1 ~ 1024
+	rageRange = 5
+	#Mourning Obsidian teleports creatures that walk on top of it. [Default: true]
+	mourningTP = true
+	#Range in blocks of Mourning Obsidian's teleportation. [Default: 10]
+	#Range: 1 ~ 1024
+	mourningRange = 10
+	#Number of game ticks without sleeping before the Mind Lantern turns on. [Default: 72000]
+	#Range: > 1
+	insomniaTicks = 72000
+
