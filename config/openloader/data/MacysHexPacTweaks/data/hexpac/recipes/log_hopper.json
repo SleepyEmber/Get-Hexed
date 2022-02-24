@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ILI",
+	"ILI",
+	" I "
+  ],
+  "key": {
+    "L": {"tag": "minecraft:logs"},
+	"I": {"tag": "forge:ingots/iron"}
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 16
+  }
+}

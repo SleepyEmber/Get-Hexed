@@ -1,0 +1,223 @@
+{
+    "stddev": 1.0,
+    "type": "hexcasting:scrolls",
+    "conditions": [
+        {
+            "condition": "alternative",
+            "terms": [
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "artifacts:chests/campsite_chest"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/aviary/aviary_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "artifacts:chests/campsite_chest"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/aviary/aviary_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/bandit_towers/bandit_towers_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/ceryneian_hind/ceryneian_hind_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/foundry/foundry_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/heavenly_rider/heavenly_rider_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/illager_corsair/illager_corsair_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/illager_fort/illager_fort_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/illager_galley/illager_galley_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/illager_windmill/illager_windmill_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/infested_temple/infested_temple_top_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/jungle_tree_house/jungle_tree_house_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/mines_treasure_big"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/mines_treasure_medium"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/mines_treasure_small"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/mining_system/mining_system_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/mushroom_house/mushroom_house_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/mushroom_mines/mushroom_mines_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/scorched_mines/scorched_mines_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/small_blimp/small_blimp_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/typhon/typhon_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_enhanced:chests/jungle_monument/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_enhanced:chests/monster_maze/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_enhanced:chests/tower_of_the_undead/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_enhanced:desert_temple_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "endrem:chests/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "minecraft:chests/bastion_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "minecraft:chests/buried_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "minecraft:chests/end_city_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "minecraft:chests/shipwreck_treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/bastions/underground/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/shipwrecks/crimson/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/shipwrecks/end/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/shipwrecks/nether_bricks/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/shipwrecks/warped/treasure"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/abandoned_temple/abandoned_temple_map"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/lighthouse/lighthouse_top"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/merchant_campsite/merchant_campsite_supply"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_arise:chests/monastery/monastery_map"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_enhanced:chests/castle/library"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "dungeons_enhanced:chests/witch_tower"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/strongholds/nether_library"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/villages/crimson_cartographer"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:chests/villages/warped_cartographer"
+                },
+                {
+                    "condition": "forge:loot_table_id",
+                    "loot_table_id": "repurposed_structures:shulker_boxes/strongholds/end_library"
+                }
+            ]
+        }
+    ]
+}

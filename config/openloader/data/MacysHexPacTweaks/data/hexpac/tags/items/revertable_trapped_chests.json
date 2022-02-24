@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "quark:oak_chest",
+    "quark:spruce_trapped_chest",
+    "quark:birch_trapped_chest",
+    "quark:jungle_trapped_chest",
+    "quark:acacia_trapped_chest",
+    "quark:dark_oak_trapped_chest",
+    "quark:warped_trapped_chest",
+    "quark:crimson_trapped_chest"
+	]
+}

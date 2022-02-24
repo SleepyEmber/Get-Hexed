@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#E#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_nugget"
+        },
+        "E": {
+            "tag": "hexpac:bulbs"
+        }
+    },
+    "result": {
+        "item": "extlights:light_lantern_bulb_iron",
+        "count": 1
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "quark:gold_bars"
+    }
+  ],
+  "result": {
+    "item": "tconstruct:gold_bars"
+  }
+}

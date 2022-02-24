@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "tag": "hexpac:brass_bars"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_brass",
+    "amount": 30
+  },
+  "temperature": 800,
+  "time": 35
+}

@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "waystones:warp_stone"
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DED",
+    "EGE",
+    "DED"
+  ],
+  "key": {
+    "G": {"tag": "botania:dragonstone_gems"},
+    "E": {"item": "botania:mana_pearl"},
+    "D": {"item": "hexcasting:charged_amethyst"}
+  }
+}

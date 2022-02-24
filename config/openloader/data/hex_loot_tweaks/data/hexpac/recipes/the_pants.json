@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "aaa",
+        "a a",
+        "a a"
+    ],
+    "key": {
+        "a": {
+            "item": "minecraft:gold_nugget"
+        }
+    },
+    "result": {
+        "item": "minecraft:golden_leggings",
+        "nbt": "{Damage:100,AttributeModifiers:[{Amount:-100,AttributeName:\"generic.armor\",Name:\"generic.armor\",UUID:[I;-122110,20449,212950,-40898]}],Enchantments:[{id:\"binding_curse\",lvl:1}],Unbreakable:1,display:{Name:'[{\"text\":\"Wear it or No Balls\",\"italic\":false}]'}}"
+    }
+}

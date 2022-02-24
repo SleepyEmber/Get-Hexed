@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "tag": "hexpac:copper_bars"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 30
+  },
+  "temperature": 800,
+  "time": 35
+}

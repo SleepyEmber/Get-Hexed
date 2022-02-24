@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "extlights:glowstone_bulb",
+	"create:electron_tube",
+	"immersiveengineering:electron_tube"
+	]
+}

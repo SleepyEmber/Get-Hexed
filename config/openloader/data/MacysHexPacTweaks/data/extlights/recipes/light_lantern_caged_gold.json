@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "I#I",
+        "IEI",
+        "I#I"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_nugget"
+        },
+        "I": {
+            "tag": "hexpac:gold_bars"
+        },
+        "E": {
+            "tag": "hexpac:bulbs"
+        }
+    },
+    "result": {
+        "item": "extlights:light_lantern_caged_gold",
+        "count": 1
+    }
+}

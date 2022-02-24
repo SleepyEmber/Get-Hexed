@@ -1,0 +1,25 @@
+{
+  "parent": "farmersdelight:main/obtain_netherite_knife",
+  "display": {
+    "icon": {
+      "item": "farmersdelight:netherite_knife",
+      "nbt": "{Damage:0,CustomModelData:3151814}"
+    },
+    "title": {"translate": "hexpac.advancement.corniest"},
+    "description": {"translate": "hexpac.advancement.corniest.desc"},
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "make_corny_joke": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {"type": "minecraft:player"},
+        "killing_blow": {"direct_entity":{"equipment":{"mainhand":{"nbt":"{CustomModelData:3151814}"}}}}
+	  }
+    }
+  },
+  "requirements": [["make_corny_joke"]]
+}

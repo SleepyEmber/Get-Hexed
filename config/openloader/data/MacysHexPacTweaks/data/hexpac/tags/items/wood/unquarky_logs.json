@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "#architects_palette:twisted_logs",
+    "#forge:logs/archwood",
+    "#ecologics:coconut_logs",
+    "#hexerei:willow_logs",
+    "#hexerei:mahogany_logs",
+    "naturesaura:ancient_log",
+    "naturesaura:ancient_bark",
+    "#tconstruct:greenheart_logs",
+    "#tconstruct:skyroot_logs",
+    "#tconstruct:bloodshroom_logs",
+	"#malum:runewood_logs",
+	"#malum:soulwood_logs"
+	],
+  "bopvals": [
+    "#biomesoplenty:fir_logs",
+    "#biomesoplenty:redwood_logs",
+    "#biomesoplenty:cherry_logs",
+    "#biomesoplenty:mahogany_logs",
+    "#biomesoplenty:jacaranda_logs",
+    "#biomesoplenty:palm_logs",
+    "#biomesoplenty:willow_logs",
+    "#biomesoplenty:dead_logs",
+    "#biomesoplenty:magic_logs",
+	"biomesoplenty:hellbark_logs",
+    "#biomesoplenty:umbran_logs"
+    ]
+}

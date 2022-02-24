@@ -1,0 +1,5 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{"item": "quark:matrix_enchanter"}],
+    "result": {"item": "minecraft:enchanting_table", "count": 1}
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "IEI",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:iron_nugget"
+        },
+        "I": {
+            "item": "minecraft:iron_bars"
+        },
+        "E": {
+            "tag": "hexpac:bulbs"
+        }
+    },
+    "result": {
+        "item": "extlights:light_lantern_fancy_iron",
+        "count": 1
+    }
+}

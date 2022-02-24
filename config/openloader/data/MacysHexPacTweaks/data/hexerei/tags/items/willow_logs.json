@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "hexerei:willow_log",
+	"hexerei:willow_wood",
+	"hexerei:stripped_willow_log",
+	"hexerei:stripped_willow_wood"
+	]
+}

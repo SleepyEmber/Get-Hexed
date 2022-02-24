@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "tag": "hexpac:zinc_bars"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_zinc",
+    "amount": 30
+  },
+  "temperature": 800,
+  "time": 35
+}

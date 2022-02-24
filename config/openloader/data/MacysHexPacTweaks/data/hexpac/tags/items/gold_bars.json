@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "quark:gold_bars",
+	"tconstruct:gold_bars",
+	"createdeco:gold_bars",
+	"createdeco:gold_bars_overlay"
+	]
+}

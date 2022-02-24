@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "hexcasting:amethyst_dust"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_amethyst",
+    "amount": 20
+  },
+  "temperature": 950,
+  "time": 20
+}

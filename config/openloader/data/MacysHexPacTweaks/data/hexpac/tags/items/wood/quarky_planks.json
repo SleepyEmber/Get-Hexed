@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+      "#forge:planks/oak",
+	  "#forge:planks/spruce",
+	  "#forge:planks/birch",
+	  "#forge:planks/jungle",
+	  "#forge:planks/dark_oak",
+	  "#forge:planks/crimson",
+	  "#forge:planks/warped",
+	  "quark:azalea_planks"
+	]
+}

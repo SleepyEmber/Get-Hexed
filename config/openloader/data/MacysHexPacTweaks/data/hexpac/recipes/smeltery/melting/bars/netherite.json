@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": [
+    {
+      "tag": "hexpac:netherite_bars"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_netherite",
+    "amount": 30
+  },
+  "temperature": 1200,
+  "time": 35
+}

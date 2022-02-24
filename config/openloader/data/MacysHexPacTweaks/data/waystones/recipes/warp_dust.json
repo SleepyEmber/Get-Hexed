@@ -1,0 +1,11 @@
+{
+  "result": {
+    "item": "waystones:warp_dust",
+    "count": 4
+  },
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "botania:mana_pearl"},
+    {"item": "hexcasting:charged_amethyst"}
+  ]
+}

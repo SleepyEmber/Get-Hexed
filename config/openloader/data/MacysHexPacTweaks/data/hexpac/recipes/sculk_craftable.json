@@ -1,0 +1,5 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{"item": "minecraft:observer"},{"item": "botania:red_string"},{"item": "botania:mutated_seeds"}],
+    "result": {"item": "minecraft:sculk_sensor", "count": 1}
+}

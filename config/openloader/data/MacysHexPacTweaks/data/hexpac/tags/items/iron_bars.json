@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_bars",
+	"createdeco:polished_iron_bars",
+	"createdeco:iron_bars_overlay",
+	"createdeco:polished_iron_bars_overlay"
+	]
+}
