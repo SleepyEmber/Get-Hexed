@@ -24,6 +24,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 14
+	#Range: > 0
+	offset = 14
 
 ["Desert Temple"]
 	#
@@ -50,6 +55,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 8
+	#Range: > 0
+	offset = 8
 
 ["Desert Tomb"]
 	#
@@ -76,6 +86,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 7
+	#Range: > 0
+	offset = 7
 
 ["Druid Circle"]
 	#
@@ -102,6 +117,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 9
+	#Range: > 0
+	offset = 9
 
 ["Dungeon Variant"]
 	#
@@ -117,17 +137,22 @@
 	#
 	# A filter for which biomes this structure should generate in. Works with the biome dictionary using # (#structure_gel:overworld) and "not" statements using ! (!minecraft:plains). These can be combined (!#nether). Operates in the order typed.
 	# Example: ["#forge:forest", "!minecraft:flower_forest"] This will add all forests in the biome dictionary and then remove the flower forest.
-	# Default: ["#structure_gel:neutral_temp", "#structure_gel:cold", "#structure_gel:snowy"]
+	# Default: []
 	biomes = ["#structure_gel:neutral_temp", "#structure_gel:cold", "#structure_gel:snowy"]
 	#
 	# How the biomes list should be used. true = whitelist, false = blacklist.
-	# Default: true
+	# Default: false
 	is_whitelist = true
 	#
 	# What dimensions should this structure be placed in. Type ["allow_all"] to allow all dimensions
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 3
+	#Range: > 0
+	offset = 3
 
 ["Hay Storage"]
 	#
@@ -154,6 +179,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 6
+	#Range: > 0
+	offset = 6
 
 ["Ice Pit"]
 	#
@@ -169,7 +199,7 @@
 	#
 	# A filter for which biomes this structure should generate in. Works with the biome dictionary using # (#structure_gel:overworld) and "not" statements using ! (!minecraft:plains). These can be combined (!#nether). Operates in the order typed.
 	# Example: ["#forge:forest", "!minecraft:flower_forest"] This will add all forests in the biome dictionary and then remove the flower forest.
-	# Default: ["#structure_gel:snowy", "#structure_gel:frozen", "!#structure_gel:mountain", "!#structure_gel:river", "!structure_gel:beach"]
+	# Default: ["#structure_gel:snowy", "#structure_gel:frozen", "!#structure_gel:mountain", "!#structure_gel:river", "!#structure_gel:beach"]
 	biomes = ["#structure_gel:snowy", "#structure_gel:frozen", "!#structure_gel:mountain", "!#structure_gel:river", "!structure_gel:beach"]
 	#
 	# How the biomes list should be used. true = whitelist, false = blacklist.
@@ -180,6 +210,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 8
+	#Range: > 0
+	offset = 8
 
 ["Jungle Monument"]
 	#
@@ -206,6 +241,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 5
+	#Range: > 0
+	offset = 5
 
 ["Large Dungeon"]
 	#
@@ -232,6 +272,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 9
+	#Range: > 0
+	offset = 9
 
 ["Miners House"]
 	#
@@ -258,6 +303,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 6
+	#Range: > 0
+	offset = 6
 
 ["Monster Maze"]
 	#
@@ -284,6 +334,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 8
+	#Range: > 0
+	offset = 8
 
 ["Mushroom House"]
 	#
@@ -310,6 +365,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 3
+	#Range: > 0
+	offset = 3
 
 ["Pillager Camp"]
 	#
@@ -336,6 +396,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 12
+	#Range: > 0
+	offset = 12
 
 ["Ruined Building"]
 	#
@@ -362,6 +427,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 6
+	#Range: > 0
+	offset = 6
 
 [Stables]
 	#
@@ -388,6 +458,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 11
+	#Range: > 0
+	offset = 11
 
 ["Tall Witch Hut"]
 	#
@@ -414,6 +489,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 4
+	#Range: > 0
+	offset = 4
 
 ["Tower of the Undead"]
 	#
@@ -440,6 +520,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 9
+	#Range: > 0
+	offset = 9
 
 ["Tree House"]
 	#
@@ -466,6 +551,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 7
+	#Range: > 0
+	offset = 7
 
 ["Watch Tower"]
 	#
@@ -492,6 +582,11 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 8
+	#Range: > 0
+	offset = 8
 
 ["Witch Tower"]
 	#
@@ -518,4 +613,9 @@
 	# Example: ["minecraft:overworld", "some_mod:cool_dimension"]
 	# Default: ["minecraft:overworld"]
 	valid_dimensions = ["minecraft:overworld"]
+	#
+	# A random offset applied to spacing. Values closer to 0 produce a grid effect while values closer to spacing are more random.
+	# Default: 5
+	#Range: > 0
+	offset = 5
 
