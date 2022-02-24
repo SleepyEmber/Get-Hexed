@@ -5,5 +5,5 @@
 !/mods/
 !/scripts/
 !/.gitignore
-.bak
+*.bak
 config/jei/world
