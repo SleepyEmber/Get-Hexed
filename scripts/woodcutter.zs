@@ -2,7 +2,7 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.ingredient.IIngredient;
 
 function woodcut(inputName as string, input as IIngredient, output as IItemStack) as void {
-    <recipetype:corail_woodcutter:woodcutting>.addJsonRecipe(inputName + "_to_" + output.registryName.path, {
+    <recipetype:corail_woodcutter:woodcutting>.addJsonRecipe(output.registryName.path + "_from_" + inputName, {
         "ingredient": input,
         "result": output.registryName,
         "count": output.amount
@@ -49,9 +49,8 @@ function woodcutSet(
     if (trapdoor != null)           woodcut(plankName, plank, trapdoor);
     if (vertical_slab != null)      woodcut(plankName, plank, vertical_slab * 2);
 }
-// <item:hexerei:stripped_mahogany_log>
-// <item:hexerei:stripped_mahogany_wood>
-woodcutSet("hexe_mahogany", <item:hexerei:mahogany_planks>,
+
+woodcutSet("mahogany", <item:hexerei:mahogany_planks>,
     <item:hexerei:mahogany_log> | <item:hexerei:mahogany_wood> 
         | <item:hexerei:stripped_mahogany_log> | <item:hexerei:stripped_mahogany_wood>,
     null, 
@@ -66,7 +65,7 @@ woodcutSet("hexe_mahogany", <item:hexerei:mahogany_planks>,
     <item:hexerei:mahogany_trapdoor>,
     null
 );
-woodcutSet("hexe_willow", <item:hexerei:willow_planks>,
+woodcutSet("willow", <item:hexerei:willow_planks>,
     <item:hexerei:willow_log> | <item:hexerei:willow_wood> 
         | <item:hexerei:stripped_willow_log> | <item:hexerei:stripped_willow_wood>,
     null, 
@@ -214,25 +213,155 @@ woodcutSet("coconut",
     <item:ecologics:coconut_trapdoor>,
     null
 );
-woodcut("cherry", <item:biomesoplenty:cherry_planks>, <item:biomesoplenty:cherry_sign>);
-woodcut("cherry_log", <item:biomesoplenty:cherry_log>, <item:biomesoplenty:cherry_sign> * 4); 
-woodcut("dead", <item:biomesoplenty:dead_planks>, <item:biomesoplenty:dead_sign>);
-woodcut("dead_log", <item:biomesoplenty:dead_log>, <item:biomesoplenty:dead_sign> * 4); 
-woodcut("fir", <item:biomesoplenty:fir_planks>, <item:biomesoplenty:fir_sign>);
-woodcut("fir_log", <item:biomesoplenty:fir_log>, <item:biomesoplenty:fir_sign> * 4); 
-woodcut("hellbark", <item:biomesoplenty:hellbark_planks>, <item:biomesoplenty:hellbark_sign>);
-woodcut("hellbark_log", <item:biomesoplenty:hellbark_log>, <item:biomesoplenty:hellbark_sign> * 4); 
-woodcut("jacaranda", <item:biomesoplenty:jacaranda_planks>, <item:biomesoplenty:jacaranda_sign>);
-woodcut("jacaranda_log", <item:biomesoplenty:jacaranda_log>, <item:biomesoplenty:jacaranda_sign> * 4); 
-woodcut("magic", <item:biomesoplenty:magic_planks>, <item:biomesoplenty:magic_sign>);
-woodcut("magic_log", <item:biomesoplenty:magic_log>, <item:biomesoplenty:magic_sign> * 4); 
-woodcut("mahogany", <item:biomesoplenty:mahogany_planks>, <item:biomesoplenty:mahogany_sign>);
-woodcut("mahogany_log", <item:biomesoplenty:mahogany_log>, <item:biomesoplenty:mahogany_sign> * 4); 
-woodcut("palm", <item:biomesoplenty:palm_planks>, <item:biomesoplenty:palm_sign>);
-woodcut("palm_log", <item:biomesoplenty:palm_log>, <item:biomesoplenty:palm_sign> * 4); 
-woodcut("redwood", <item:biomesoplenty:redwood_planks>, <item:biomesoplenty:redwood_sign>);
-woodcut("redwood_log", <item:biomesoplenty:redwood_log>, <item:biomesoplenty:redwood_sign> * 4); 
-woodcut("umbran", <item:biomesoplenty:umbran_planks>, <item:biomesoplenty:umbran_sign>);
-woodcut("umbran_log", <item:biomesoplenty:umbran_log>, <item:biomesoplenty:umbran_sign> * 4); 
-woodcut("willow", <item:biomesoplenty:willow_planks>, <item:biomesoplenty:willow_sign>);
-woodcut("willow_log", <item:biomesoplenty:willow_log>, <item:biomesoplenty:willow_sign> * 4);
+
+var treatedPlank = <tag:items:forge:treated_wood>;
+woodcut("treated_wood", treatedPlank, <item:immersiveengineering:stick_treated> * 2);
+woodcut("treated_wood", treatedPlank, <item:immersiveengineering:treated_fence>);
+woodcut("treated_wood", <item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:slab_treated_wood_horizontal> * 2);
+woodcut("treated_wood", <item:immersiveengineering:treated_wood_horizontal>, <item:immersiveengineering:stairs_treated_wood_horizontal>);
+woodcut("treated_wood", <item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:slab_treated_wood_packaged> * 2);
+woodcut("treated_wood", <item:immersiveengineering:treated_wood_packaged>, <item:immersiveengineering:stairs_treated_wood_packaged> * 2);
+woodcut("treated_wood", <item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:slab_treated_wood_vertical> * 2);
+woodcut("treated_wood", <item:immersiveengineering:treated_wood_vertical>, <item:immersiveengineering:stairs_treated_wood_vertical> * 2);
+for plank in treatedPlank {
+    woodcut("treated_wood", treatedPlank, plank);
+}
+
+woodcutSet("azalea", <item:quark:azalea_planks>,
+    <tag:items:quark:azalea_logs>,
+    <item:quark:azalea_boat>,
+    <item:quark:azalea_button>,
+    <item:quark:azalea_door>,
+    <item:quark:azalea_fence_gate>,
+    <item:quark:azalea_fence>,
+    <item:quark:azalea_pressure_plate>,
+    <item:quark:azalea_sign>,
+    <item:quark:azalea_planks_slab>,
+    <item:quark:azalea_planks_stairs>,
+    <item:quark:azalea_trapdoor>,
+    <item:quark:azalea_planks_vertical_slab>
+);
+
+woodcutSet("blossom", <item:quark:blossom_planks>,
+    <tag:items:quark:blossom_logs>, 
+    <item:quark:blossom_boat>,
+    <item:quark:blossom_button>,
+    <item:quark:blossom_door>,
+    <item:quark:blossom_fence_gate>, 
+    <item:quark:blossom_fence>,
+    <item:quark:blossom_pressure_plate>, 
+    <item:quark:blossom_sign>,
+    <item:quark:blossom_planks_slab>,
+    <item:quark:blossom_planks_stairs>,
+    <item:quark:blossom_trapdoor>, 
+    <item:quark:blossom_planks_vertical_slab>
+);
+
+var runewood = <tag:items:malum:runewood_logs>;
+var runewoodPlanks = <item:malum:runewood_planks> | <item:malum:runewood_panel>
+    | <item:malum:runewood_tiles> | <item:malum:cut_runewood_planks>
+    | <item:malum:vertical_runewood_planks>;
+
+woodcut("runewood_log", runewood, <item:malum:runewood_beam>);
+woodcut("runewood_log", runewood, <item:malum:runewood_boat>);
+woodcut("runewood_log", runewood, <item:malum:runewood_planks_button> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_door> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_planks_fence_gate>);
+woodcut("runewood_log", runewood, <item:malum:runewood_planks_fence> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_planks> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_panel> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_tiles> * 4);
+woodcut("runewood_log", runewood, <item:malum:cut_runewood_planks> * 4);
+woodcut("runewood_log", runewood, <item:malum:vertical_runewood_planks> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_planks_pressure_plate> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_sign> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_planks_slab> * 8);
+woodcut("runewood_log", runewood, <item:malum:runewood_panel_slab> * 8);
+woodcut("runewood_log", runewood, <item:malum:runewood_tiles_slab> * 8);
+woodcut("runewood_log", runewood, <item:malum:vertical_runewood_planks_slab> * 8);
+woodcut("runewood_log", runewood, <item:malum:runewood_planks_stairs> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_panel_stairs> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_tiles_stairs> * 4);
+woodcut("runewood_log", runewood, <item:malum:vertical_runewood_planks_stairs> * 4);
+woodcut("runewood_log", runewood, <item:malum:runewood_trapdoor> * 4);
+woodcut("runewood_log", runewood, <item:malum:solid_runewood_trapdoor> * 4);
+woodcut("runewood", runewoodPlanks, <item:malum:runewood_planks_button>);
+woodcut("runewood", runewoodPlanks, <item:malum:runewood_door>);
+woodcut("runewood", runewoodPlanks, <item:malum:runewood_planks_fence>);
+woodcut("runewood", runewoodPlanks, <item:malum:runewood_planks_pressure_plate>);
+woodcut("runewood", runewoodPlanks, <item:malum:runewood_sign>);
+woodcut("runewood", runewoodPlanks, <item:malum:runewood_trapdoor>);
+woodcut("runewood", runewoodPlanks, <item:malum:solid_runewood_trapdoor>);
+woodcut("runewood", <item:malum:runewood_planks>, <item:malum:runewood_planks_slab> * 2);
+woodcut("runewood", <item:malum:runewood_panel>, <item:malum:runewood_panel_slab> * 2);
+woodcut("runewood", <item:malum:runewood_tiles>, <item:malum:runewood_tiles_slab> * 2);
+woodcut("runewood", <item:malum:vertical_runewood_planks>, <item:malum:vertical_runewood_planks_slab> * 2);
+woodcut("runewood", <item:malum:runewood_planks>, <item:malum:runewood_planks_stairs> * 2);
+woodcut("runewood", <item:malum:runewood_panel>, <item:malum:runewood_panel_stairs> * 2);
+woodcut("runewood", <item:malum:runewood_tiles>, <item:malum:runewood_tiles_stairs> * 2);
+woodcut("runewood", <item:malum:vertical_runewood_planks>, <item:malum:vertical_runewood_planks_stairs> * 2);
+for plank in runewoodPlanks.items {
+    woodcut("runewood", runewoodPlanks, plank);
+}
+
+var soulwood = <tag:items:malum:soulwood_logs>;
+var soulwoodPlanks = <item:malum:soulwood_planks> | <item:malum:soulwood_panel>
+    | <item:malum:soulwood_tiles> | <item:malum:cut_soulwood_planks>
+    | <item:malum:vertical_soulwood_planks>;
+
+
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_beam>);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_boat>);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_planks_button> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_door> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_planks_fence_gate>);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_planks_fence> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_planks> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_panel> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_tiles> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:cut_soulwood_planks> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:vertical_soulwood_planks> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_planks_pressure_plate> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_sign> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_planks_slab> * 8);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_panel_slab> * 8);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_tiles_slab> * 8);
+woodcut("soulwood_log", soulwood, <item:malum:vertical_soulwood_planks_slab> * 8);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_planks_stairs> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_panel_stairs> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_tiles_stairs> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:vertical_soulwood_planks_stairs> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:soulwood_trapdoor> * 4);
+woodcut("soulwood_log", soulwood, <item:malum:solid_soulwood_trapdoor> * 4);
+woodcut("soulwood", soulwoodPlanks, <item:malum:soulwood_planks_button>);
+woodcut("soulwood", soulwoodPlanks, <item:malum:soulwood_door>);
+woodcut("soulwood", soulwoodPlanks, <item:malum:soulwood_planks_fence>);
+woodcut("soulwood", soulwoodPlanks, <item:malum:soulwood_planks_pressure_plate>);
+woodcut("soulwood", soulwoodPlanks, <item:malum:soulwood_sign>);
+woodcut("soulwood", soulwoodPlanks, <item:malum:soulwood_trapdoor>);
+woodcut("soulwood", soulwoodPlanks, <item:malum:solid_soulwood_trapdoor>);
+woodcut("soulwood", <item:malum:soulwood_planks>, <item:malum:soulwood_planks_slab> * 2);
+woodcut("soulwood", <item:malum:soulwood_panel>, <item:malum:soulwood_panel_slab> * 2);
+woodcut("soulwood", <item:malum:soulwood_tiles>, <item:malum:soulwood_tiles_slab> * 2);
+woodcut("soulwood", <item:malum:vertical_soulwood_planks>, <item:malum:vertical_soulwood_planks_slab> * 2);
+woodcut("soulwood", <item:malum:soulwood_planks>, <item:malum:soulwood_planks_stairs> * 2);
+woodcut("soulwood", <item:malum:soulwood_panel>, <item:malum:soulwood_panel_stairs> * 2);
+woodcut("soulwood", <item:malum:soulwood_tiles>, <item:malum:soulwood_tiles_stairs> * 2);
+woodcut("soulwood", <item:malum:vertical_soulwood_planks>, <item:malum:vertical_soulwood_planks_stairs> * 2);
+for plank in soulwoodPlanks.items {
+    woodcut("soulwood", soulwoodPlanks, plank);
+}
+
+woodcut("nahuatl", <item:tconstruct:nahuatl>, <item:tconstruct:nahuatl_fence>);
+woodcut("nahuatl", <item:tconstruct:nahuatl>, <item:tconstruct:nahuatl_slab> * 2);
+woodcut("nahuatl", <item:tconstruct:nahuatl>, <item:tconstruct:nahuatl_stairs>);
+
+woodcutSet("ancient", <item:naturesaura:ancient_planks>, 
+    <item:naturesaura:ancient_log> | <item:naturesaura:ancient_bark>,
+    null, null, null, null, null, null, null,
+    <item:naturesaura:ancient_slab>,
+    <item:naturesaura:ancient_stairs>,
+    null, null
+);
+woodcut("ancient_log", <item:naturesaura:ancient_log> | <item:naturesaura:ancient_bark>, <item:naturesaura:ancient_stick> * 8);
+woodcut("ancient", <item:naturesaura:ancient_planks>, <item:naturesaura:ancient_stick> * 2);
