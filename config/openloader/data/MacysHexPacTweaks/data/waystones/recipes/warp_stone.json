@@ -9,7 +9,7 @@
     "DED"
   ],
   "key": {
-    "G": [{"item": "malum:arcane_spirit"}],
+    "G": [{"item": "malum:ether"}],
     "E": {"item": "minecraft:ender_pearl"},
     "D": {"item": "hexcasting:charged_amethyst"}
   }
