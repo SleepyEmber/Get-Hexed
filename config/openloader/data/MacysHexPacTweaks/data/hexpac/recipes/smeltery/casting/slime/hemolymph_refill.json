@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {"item": "alexsmobs:hemolymph_blaster"},
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:blood",
+    "amount": 250
+  },
+  "result": "alexsmobs:hemolymph_blaster",
+  "cooling_time": 10
+}

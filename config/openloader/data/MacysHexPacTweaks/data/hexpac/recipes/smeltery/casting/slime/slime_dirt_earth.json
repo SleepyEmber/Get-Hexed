@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {"item": "minecraft:dirt"},
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "forge:slime",
+    "amount": 500
+  },
+  "result": "tconstruct:earth_slime_dirt",
+  "cooling_time": 400
+}

@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {"item": "alexsmobs:blood_sprayer"},
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "tconstruct:blood",
+    "amount": 250
+  },
+  "result": "alexsmobs:blood_sprayer",
+  "cooling_time": 10
+}
