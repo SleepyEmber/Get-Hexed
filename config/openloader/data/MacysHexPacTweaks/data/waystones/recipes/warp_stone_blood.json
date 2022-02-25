@@ -5,11 +5,11 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "DED",
-    "EGE",
+    "E#E",
     "DED"
   ],
   "key": {
-    "G": [{"item": "malum:arcane_spirit"}],
+    "#": [{"item": "hexerei:blood_bottle"}],
     "E": {"item": "minecraft:ender_pearl"},
     "D": {"item": "hexcasting:charged_amethyst"}
   }
