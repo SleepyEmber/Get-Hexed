@@ -1,0 +1,6 @@
+{
+	"type":"corail_woodcutter:woodcutting",
+	"ingredient":[{"tag":"hexpac:revertable_trapped_chests"},{"item":"minecraft:trapped_chest"}],
+	"result":"quark:jungle_trapped_chest",
+	"count":1
+}

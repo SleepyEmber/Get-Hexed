@@ -1,0 +1,6 @@
+{
+	"type":"corail_woodcutter:woodcutting",
+	"ingredient":[{"tag":"quark:revertable_chests"},{"item":"minecraft:chest"}],
+	"result":"quark:crimson_chest",
+	"count":1
+}
