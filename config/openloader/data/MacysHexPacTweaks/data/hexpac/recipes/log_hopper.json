@@ -10,7 +10,7 @@
 	"I": {"tag": "forge:ingots/iron"}
   },
   "result": {
-    "item": "minecraft:stick",
-    "count": 16
+    "item": "minecraft:hopper",
+    "count": 1
   }
 }
