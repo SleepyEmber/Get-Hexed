@@ -7,7 +7,7 @@ var cornificationIngs = [<tag:items:forge:tools/knives>, <item:minecraft:moss_bl
 
 craftingTable.addShapeless(
 	"mossknife", 
-	<item:farmersdelight:flint_knife>,
+	<item:farmersdelight:flint_knife>.withTag({"CustomModelData":3151814}),
 	cornificationIngs,
 	(usualOut as IItemStack, inputs as IItemStack[]) => {
 		var knife = inputs[0];
